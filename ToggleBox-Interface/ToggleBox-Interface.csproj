@@ -6,7 +6,12 @@
     <RootNamespace>ToggleBox_Interface</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <ApplicationIcon>canva-illuminated-video-game-controller-joystick-gamepad-icon-on-blue-MAG5nv5KA68.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="canva-illuminated-video-game-controller-joystick-gamepad-icon-on-blue-MAG5nv5KA68.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="System.IO.Ports" Version="10.0.8" />

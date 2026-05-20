@@ -23,6 +23,7 @@ namespace ToggleBox_Interface
             {
                 Console.WriteLine($"{i+1}: {serialPortsAvailable[i]}");
             }
+            Console.Write("Serial Port Number: ");
             portSelected = int.Parse(Console.ReadLine());
             if ((portSelected <= 0 ) || (portSelected > serialPortsAvailable.Length)) {
                     Console.WriteLine("Invalid Serial Port Selected! Quitting...");
@@ -94,9 +95,6 @@ namespace ToggleBox_Interface
             }
             else
                 Console.WriteLine("Acquired: vJoy device number {0}.\n", id);
-
-            Console.WriteLine("\nPress Enter to begin feed");
-            Console.ReadKey(true);
 
             joystick.ResetVJD(id);
 
