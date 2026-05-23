@@ -19,6 +19,7 @@ namespace ToggleBox_Interface
             string[] serialPortsAvailable = SerialPort.GetPortNames();
             int portSelected = 0;
             Console.WriteLine("Please Select a Serial Port: ");
+
             for (int i = 0; i < serialPortsAvailable.Length;  i++)
             {
                 Console.WriteLine($"{i+1}: {serialPortsAvailable[i]}");
